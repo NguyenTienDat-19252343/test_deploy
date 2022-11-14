@@ -6,11 +6,16 @@ const student = new mongoose.Schema({
     require: true,
   },
   StudentID: {
-    type: Int16Array,
+    type: Number,
     require: true,
   },
   birthday: {
     type: Date,
     reuire: true,
   },
+  phone: {
+    type: Number,
+  },
 });
+
+module.exports = { student };
